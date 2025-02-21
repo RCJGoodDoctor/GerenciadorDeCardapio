@@ -1,0 +1,89 @@
+﻿//------------------------------------------------------------------------------
+// <gerado automaticamente>
+//     Esse código foi gerado por uma ferramenta.
+//
+//     As alterações ao arquivo poderão causar comportamento incorreto e serão perdidas se
+//     o código for recriado
+// </gerado automaticamente>
+//------------------------------------------------------------------------------
+
+namespace prj37600_prova
+{
+
+
+    public partial class novoPrato
+    {
+
+        /// <summary>
+        /// Controle form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// Controle ddlProteina.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProteina;
+
+        /// <summary>
+        /// Controle txtDetalhe.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDetalhe;
+
+        /// <summary>
+        /// Controle ddlAcompanhamento.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlAcompanhamento;
+
+        /// <summary>
+        /// Controle ddlSalada.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSalada;
+
+        /// <summary>
+        /// Controle BtnSalvar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSalvar;
+
+        /// <summary>
+        /// Controle litMsg.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litMsg;
+
+        /// <summary>
+        /// Controle litScriptTost.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litScriptTost;
+    }
+}
