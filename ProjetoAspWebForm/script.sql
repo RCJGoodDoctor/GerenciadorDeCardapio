@@ -1,6 +1,6 @@
 DROP SCHEMA IF EXISTS avaliacao_4bim_2n;
 CREATE SCHEMA avaliacao_4bim_2n;
-USE avaliacao_4bim_2n;
+
 
 CREATE TABLE salada 
 (
