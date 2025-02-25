@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,4 +5,42 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model acompanhamento {
+  cd_acompanhamento Int     @id(map: "pk_acompanhamento")
+  nm_acompanhamento String? @db.VarChar(100)
+  prato             prato[]
+}
+
+model cardapio {
+  dt_cardapio DateTime @db.Date
+  cd_prato    Int
+  prato       prato    @relation(fields: [cd_prato], references: [cd_prato], onDelete: NoAction, onUpdate: NoAction, map: "fk_cardapio_prato")
+
+  @@id([dt_cardapio, cd_prato], map: "pk_cardapio")
+}
+
+model prato {
+  cd_prato          Int             @id(map: "pk_prato")
+  cd_proteina       Int?
+  nm_detalhe        String?         @db.VarChar(100)
+  cd_acompanhamento Int?
+  cd_salada         Int?
+  cardapio          cardapio[]
+  acompanhamento    acompanhamento? @relation(fields: [cd_acompanhamento], references: [cd_acompanhamento], onDelete: NoAction, onUpdate: NoAction, map: "fk_prato_acompanhamento")
+  proteina          proteina?       @relation(fields: [cd_proteina], references: [cd_proteina], onDelete: NoAction, onUpdate: NoAction, map: "fk_prato_proteina")
+  salada            salada?         @relation(fields: [cd_salada], references: [cd_salada], onDelete: NoAction, onUpdate: NoAction, map: "fk_prato_salada")
+}
+
+model proteina {
+  cd_proteina Int     @id(map: "pk_proteina")
+  nm_proteina String? @db.VarChar(45)
+  prato       prato[]
+}
+
+model salada {
+  cd_salada Int     @id(map: "pk_salada")
+  nm_salada String? @db.VarChar(100)
+  prato     prato[]
 }

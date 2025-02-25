@@ -1,8 +1,8 @@
 export class Proteina {
-    private cd_proteina: number;
-    private nm_proteina: string;
+    private cd_proteina: number ;
+    private nm_proteina: string|null;
   
-    constructor(cd_proteina: number, nm_proteina: string) {
+    constructor(cd_proteina: number, nm_proteina: string | null) {
       this.cd_proteina = cd_proteina;
       this.nm_proteina = nm_proteina;
     }
@@ -11,7 +11,7 @@ export class Proteina {
       return this.cd_proteina;
     }
   
-    getNmProteina(): string {
+    getNmProteina(): string | null {
       return this.nm_proteina;
     }
   
